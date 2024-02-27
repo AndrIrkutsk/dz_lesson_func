@@ -10,7 +10,8 @@ class Program
     GetSumInput();
   }
 
-  static void GetSumInput() {
+  static void GetSumInput() 
+  {
     while (true)
     {
       string getEnterUser = GetEnterUser();
@@ -35,12 +36,14 @@ class Program
     }
   }
 
-  static string GetEnterUser() {
+  static string GetEnterUser() 
+  {
     Console.WriteLine("Введите целое число: ");
     return (Console.ReadLine()!);
   }
 
-  static int GetSumNumber(int number) {
+  static int GetSumNumber(int number) 
+  {
     int sum = 0;
 
     while (number != 0)
@@ -52,7 +55,8 @@ class Program
     return sum;
   }
 
-  static bool ParityCheck(int sumNumber) {
+  static bool ParityCheck(int sumNumber) 
+  {
     return sumNumber % 2 == 0;
   }
 }

@@ -6,10 +6,11 @@ class Program
 {
   static void Main()
   {
-    GetStart();
+    CountEvenInArray();
   }
 
-  static void GetStart() {
+  static void CountEvenInArray() 
+  {
     Console.WriteLine("Введите размер массива (целое число): ");
     int lenArray = int.Parse(Console.ReadLine()!);
     int[] randomArray = new int[lenArray];
@@ -26,7 +27,8 @@ class Program
     PrintResult($"Количество чётных элементов в массиве: {countEven}");
   }
 
-  static int GetCountEvenElmInArray(int[] array) {
+  static int GetCountEvenElmInArray(int[] array) 
+  {
     int count = 0;
 
     foreach (var elm in array)
@@ -39,7 +41,8 @@ class Program
     return count;
   }
 
-  static void PrintResult(string result) {
+  static void PrintResult(string result) 
+  {
     Console.WriteLine(result);
   }
 
