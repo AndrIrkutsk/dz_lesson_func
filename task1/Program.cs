@@ -37,8 +37,7 @@ class Program
 
   static string GetEnterUser() {
     Console.WriteLine("Введите целое число: ");
-    string enter = (Console.ReadLine()!);
-    return enter;
+    return (Console.ReadLine()!);
   }
 
   static int GetSumNumber(int number) {
